@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background: url('./images/bg-header-desktop.png') no-repeat;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.logo-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.logo-content .logo {    
+    margin-bottom: 50px;
+}
+
+.history, .track, .access, .charge{
+    margin-bottom: 20px;
+    color: #4D5358;
+}
+
+.history h1{
+    font-family: inherit;
+}
+
+.clip-desc{
+    padding-left: 10px;
+    width: 558px;
+    text-align: center;
+    opacity: 0.3;
+    letter-spacing: 0;
+}
+
+.app-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.ios, .mac{
+    padding: 12px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-weight: 400;
+    color: white;
+    font-size: inherit;
+    border: none;
+    width: 200px;
+}
+
+.ios{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 11px 64px -18px hsl(171, 66%, 44%);
+}
+
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    margin-left: 10px;
+    box-shadow: 0px 11px 64px -18px hsl(233, 100%, 69%);
+}
+
+.track-content, .access-content, .charge-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 558px; */
+    /* margin-left: 440px; */
+    margin-bottom: 90px;
+}
+
+/* .track, .access{
+    width: 499px;
+    margin-left: 150px;
+} */
+
+.track-desc, .access-desc{
+    width: 558px;
+    opacity: 0.3;
+    text-align: center;
+}
+
+.features_1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.features_1 img{
+    position: relative;
+    right: 40px;
+    width: 100%;
+}
+
+.features_1-desc{
+    /* border: 1px solid red; */
+    width: 752px;
+    margin-left: 70px;
+}
+
+.desc-1, .desc-2, .desc-3{
+    margin-top: 70px;
+}
+
+.desc-1 h3, .desc-2 h3, .desc-3 h3{
+    margin-bottom: 10px;
+    color: #4D5358;
+}
+
+.desc-1 div, .desc-2 div, .desc-3 div{
+    opacity: 0.3;
+    margin-right: 100px;
+    line-height: 1.5;
+}
+
+.mobile{
+    margin-left: 230px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.charge-desc {
+    width: 330px;
+    opacity: 0.3;
+    text-align: center;
+}
+
+.features_2{
+    display: flex;
+    margin: 0 100px;
+    color: #4D5358;
+}
+
+.features_2-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin-right: 20px;
+    margin-bottom: 120px;
+}
+
+.features_2-icon{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.features_2-icon img{
+    margin-bottom: 20px;
+    width: 36px;
+}
+
+.features_2-desc{
+    text-align: center;
+    opacity: 0.3;
+}
+
+.companies{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 120px;
+}
+
+.clip-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    /* border: 1px solid red; */
+    height: 120px;
+    background-color: #F5F6F8;
+    display: flex;
+}
+
+.footer-logo img{
+    margin-top: 35px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 45px;
+}
+
+.footer-links{
+    /* border: 1px solid red; */
+    width: 500px;
+    display: flex;
+    align-items: center;
+    color: #4D5358;
+}
+
+.col{
+    flex: 0 0 33%;
+}
+
+.faq{
+    margin-bottom: 20px;
+}
+
+.install{
+    margin-bottom: 40px;
+}
+
+.media-icons{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.media-icons img{
+    margin-right: 20px;
+}
+
+.attribution{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution strong{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:375px){
+
+    body{
+        background: url('./images/bg-header-mobile.png') no-repeat;
+        font-size: 18px;
+        font-family: 'Bai Jamjuree', sans-serif;
+        background-size: contain;
+    }
+
+    .features_1, .app-buttons, .features_2, .companies, .footer, .footer-links{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .logo-content, .app-buttons, .track-content, .features_1, .features_1-desc, .mobile, .features_2, .features_2-items, .footer-links {
+        width: 100%;
+    }
+
+    .history, .features_1 .tick-monitor, .features_1 img, .mobile img, .clip-desc, .track-desc, .access-desc, .ios, .mac, .footer-logo{
+        width: inherit;
+    }
+
+    .mobile{
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .features_1-desc, .features_2{
+        margin-left: 0;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .history h1{
+        text-align: center;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .clip-desc{
+        padding-left: 0;
+    }
+
+    .clip-desc p{
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: 18px;
+    }
+
+    .ios{
+        margin-bottom: 30px;
+    }
+
+    .mac {
+        margin-left: 0;
+    }
+
+    .ios, .mac{
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .track-content h2, .access-content h2, .charge-content h2{
+        text-align: center;
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+     .track-desc p{
+        line-height: 30px;
+        padding-right: 8px;
+        padding-left: 8px;
+    } 
+
+    .tick-monitor img{
+        width: 90%;
+        right: 0;
+        margin-left: 22px;
+    }
+
+    .features_1-desc{
+        text-align: center;
+    }
+
+    .desc-1 div, .desc-2 div, .desc-3 div{
+        width: 80%;
+        padding-left: 45px;
+    }
+
+    .access-desc, .charge-desc, .features_2-desc{
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .access-desc small, .charge-desc small{
+        line-height: 30px;
+        padding-right: 8px;
+        padding-left: 8px;
+    } 
+
+    .features_2-items{
+        margin-right: 0;
+    }
+
+    .features_2-desc{
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+    .company-logo{
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .clip-content h2{
+        text-align: center;
+        padding-right: 22px;
+        padding-left: 22px;
+    }
+
+    .clip-desc {
+        line-height: 30px;
+        padding-right: 32px;
+        padding-left: 32px;
+    } 
+
+    .footer, .footer-links{
+        align-items: center;
+    }
+
+    .col{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-links{
+        margin-top: 20px;
+    }
+
+    .media-icons{
+        margin-top: 0;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    
+    
+ 
+}
